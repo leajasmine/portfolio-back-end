@@ -1,4 +1,23 @@
 # DEVCAMP PORTFOLIO
+> Ruby on Rails 5 app that allows for portfolio creation
+
+### Features
+
+- Blog
+- Portfolio
+- Drag & Drop interface
+
+### Code Example
+
+```ruby
+def my_great_method
+  puts "here it is"
+end
+```
+
+```javascript
+alert('Hi there');
+```
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
