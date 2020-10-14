@@ -9,11 +9,13 @@ class PortfoliosController < ApplicationController
 
   def new
     @portfolio_item = Portfolio.new
+    3.times { @portfolio_item.technologies.build }
   end
 
   def create
     # ensures that all the requirements are met // whitelisted set of parameters
-    @portfolio_item = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body))
+    @portfolio_item = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body,
+      technologies_attributes: [:name]))
 
     respond_to do |format|
       if @portfolio_item.save
