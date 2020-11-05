@@ -51,9 +51,11 @@ gem 'friendly_id', '~> 5.4.0'
 # authentication
 gem 'devise', '~> 4.7', '>= 4.7.3'
 
-#bootstrap
+# bootstrap
 gem 'bootstrap', '~> 5.0.0.alpha1'
-
 gem 'jquery-rails'
+
+gem 'leajasmine_view_tool', git: 'https://github.com/leajasmine/leajasmine_view_tool'
+
 
 
