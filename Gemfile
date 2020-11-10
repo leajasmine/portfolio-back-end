@@ -58,5 +58,5 @@ gem 'jquery-rails'
 # my gem // view tool
 gem 'leajasmine_view_tool', git: 'https://github.com/leajasmine/leajasmine_view_tool'
 
-
-
+# authorization
+gem 'petergate', '~> 2.0', '>= 2.0.1'
