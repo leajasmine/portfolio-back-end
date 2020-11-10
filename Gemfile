@@ -51,5 +51,12 @@ gem 'friendly_id', '~> 5.4.0'
 # authentication
 gem 'devise', '~> 4.7', '>= 4.7.3'
 
+# bootstrap
+gem 'bootstrap', '~> 5.0.0.alpha1'
+gem 'jquery-rails'
+
+# my gem // view tool
+gem 'leajasmine_view_tool', git: 'https://github.com/leajasmine/leajasmine_view_tool'
+
 # authorization
 gem 'petergate', '~> 2.0', '>= 2.0.1'
