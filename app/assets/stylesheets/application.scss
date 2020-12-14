@@ -111,6 +111,10 @@ body {
  * Custom Styles 
  */
 
+ .card {
+  padding: 16px;
+ }
+
  .card-title {
   color: black;
   text-align: left;
@@ -122,4 +126,18 @@ body {
 
  .register-text {
   text-align: right;
+ }
+
+//  any of the card classes nested within login :
+ .login > .card {
+  width: 22rem;
+  margin: 0 auto;
+  float: none; 
+ }
+
+ .form-group {
+  color: black;
+  text-align: left; 
+  margin-top: 8px;
+  margin-bottom: 8px;
  }
