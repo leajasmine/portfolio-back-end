@@ -26,6 +26,8 @@
         </div>
         <div class="col-4 text-center">
           <a class="blog-header-logo text-dark" href="#">Large</a>
+          <br>
+          <%= link_to "Create a New Blog Post", new_blog_path if logged_in?(:site_admin) %>
         </div>
         <div class="col-4 d-flex justify-content-end align-items-center">
           <a class="text-muted" href="#" aria-label="Search">
@@ -37,10 +39,8 @@
     </header>
     <% # end of blog header %>
 
-    <% # start of container and row element %>
     <div class="container">
       <div class="row mb-2">
-    <% # end of container and row element are right above end of body and html tags %>
 
         <%= yield %>
 
@@ -69,6 +69,7 @@
           </div>
         </aside><!-- /.blog-sidebar -->
         <% # end of sidebar %>
+      </div> 
 
         <% # start of footer %>
         <footer class="blog-footer">
@@ -79,10 +80,7 @@
         </footer>
         <% # end of footer %>
 
-        <%= render "shared/nav", location: "bottom" %>
-
         <%= source_helper %>
-      </div> 
     </div>
     <% # these divs ^^ belong to container and row classes above %>
   </body>
