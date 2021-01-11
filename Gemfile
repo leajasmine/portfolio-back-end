@@ -60,3 +60,6 @@ gem 'jquery-rails'
 
 # authorization
 gem 'petergate', '~> 2.0', '>= 2.0.1'
+
+# auto formating gem (rufo)
+gem 'rufo'
