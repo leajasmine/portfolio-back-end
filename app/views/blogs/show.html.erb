@@ -1,14 +1,11 @@
-<p id="notice"><%= notice %></p>
+<div class="col-md-8 blog-main">
+  <h2> <%= @blog.title %> </h2>
 
-<p>
-  <strong>Title:</strong>
-  <%= @blog.title %>
-</p>
+  <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %> |
 
-<p>
-  <strong>Body:</strong>
-  <%= @blog.body %>
-</p>
+  <p>
+    <%= @blog.body %>
+  </p>
+</div>
 
-<%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %> |
-<%= link_to 'Back', blogs_path %>
+
